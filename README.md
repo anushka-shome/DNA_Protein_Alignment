@@ -16,10 +16,10 @@ To run the code, download the alignment.py file to your device. In your terminal
 ```
  python alignment.py <protein_sequences>.fasta <dna_sequences>.fasta <l/g> [gap_open_penalty] [gap_extend_penalty]
 ```
-- <protein_sequences>.fasta contains the sequences you want to compare in the following format:
-  
+- <protein_sequences>.fasta contains the sequences you want to compare in the following format: <br>
   \>Organism 1 <br>
+  MNIT...<br>
+  \>Organism 2 <br>
   MNIT...
-  \>Organism 2
-  MNIT...
+  ...
   
