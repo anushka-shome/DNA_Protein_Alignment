@@ -23,5 +23,6 @@ To run the code, download the alignment.py file to your device. In your terminal
   MNIT...
 - <dna_sequences>.fasta contains the sequences you want to compare in the same format as the protein sequences.
 - <l/g> specifies which type of alignment: local (l) or global (g). If you enter an incorrect character, the program defaults to a global alignment.
-- The last two arguments specify the gap open and gap extend penalty. <b>Both of these arguments are optional</b>. If you choose not to enter anything, the program defaults to a -2 penalty for both.
-  
+- The last two arguments specify the gap open and gap extend penalty. <b>Both of these arguments are optional</b>. If you choose not to enter anything, the program defaults to a -2 penalty for both. You can either enter both or none of these parameters--the program does not accept one of these parameters.
+
+If you enter the parameters incorrectly, the usage is printed out.
