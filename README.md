@@ -14,9 +14,15 @@ pip install biopython
 
 To run the code, download the alignment.py file to your device. In your terminal, navigate to the folder containing the alignment.py file and run the following command:
 ```
- python alignment.py <protein_sequences>.fasta <dna_sequences>.fasta [gap_open_penalty] [gap_extend_penalty]
+ python alignment.py <protein_sequences>.fasta <dna_sequences>.fasta <l/g> [gap_open_penalty] [gap_extend_penalty]
 ```
 - <protein_sequences>.fasta contains the sequences you want to compare in the following format:
-  \>Organism 1
   
+  \>Organism 1
+
+  MNIT...
+
+  \>Organism 2
+
+  MNIT...
   
