@@ -19,10 +19,7 @@ To run the code, download the alignment.py file to your device. In your terminal
 - <protein_sequences>.fasta contains the sequences you want to compare in the following format:
   
   \>Organism 1
-
   MNIT...
-
   \>Organism 2
-
   MNIT...
   
