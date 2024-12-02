@@ -22,5 +22,5 @@ To run the code, download the alignment.py file to your device. In your terminal
   \>Organism 2 <br>
   MNIT...
 - <dna_sequences>.fasta contains the sequences you want to compare in the same format as the protein sequences
-- 
+- <l/g> specifies which type of alignment: local (l) or global (g). If you enter an incorrect character, the program defaults to a global alignment.
   
