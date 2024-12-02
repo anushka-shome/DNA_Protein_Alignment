@@ -21,5 +21,6 @@ To run the code, download the alignment.py file to your device. In your terminal
   MNIT...<br>
   \>Organism 2 <br>
   MNIT...
-  ...
+- <dna_sequences>.fasta contains the sequences you want to compare in the same format as the protein sequences
+- 
   
