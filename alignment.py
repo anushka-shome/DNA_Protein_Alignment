@@ -133,18 +133,18 @@ def global_alignment(seq1, seq2, matrix, go, gp):
   j = len(seq2)
 
   while i > 0 or j > 0:
-    if i > 0 and (j == 0 or scores[i][j] == gaps1[i][j]): #gap in sequence 2
+    if i > 0 and j > 0 and scores[i][j] == scores[i-1][j-1] + matrix[(seq1[i-1], seq2[j-1])]:
+      aseq1.append(seq1[i-1])
+      aseq2.append(seq2[j-1])
+      i = i-1
+      j = j-1
+    elif i > 0 and scores[i][j] == gaps1[i][j]: #gap in sequence 2
       aseq1.append(seq1[i-1])
       aseq2.append("-")
       i = i-1
-    elif j > 0 and (i == 0 or scores[i][j] == gaps2[i][j]): #gap in sequence 1
+    elif j > 0 and scores[i][j] == gaps2[i][j]: #gap in sequence 1
       aseq1.append("-")
       aseq2.append(seq2[j-1])
-      j = j-1
-    else: #match/mismatch case
-      aseq1.append(seq1[i-1])
-      aseq2.append(seq2[j-1])
-      i = i-1
       j = j-1
 
   aseq1.reverse()
@@ -190,9 +190,10 @@ def main():
     print("Usage: python alignment.py <protein_sequences>.fasta <dna_sequences>.fasta <l/g> [gap_open_penalty] [gap_extend_penalty]")
     return
   elif len(sys.argv) == 6:
-    go = int(sys.argv[3])
-    gp = int(sys.argv[4])
-  if sys.argv == "l":
+    go = int(sys.argv[4])
+    gp = int(sys.argv[5])
+  if sys.argv[3] == "l":
+    #print("Local alignment")
     align = 0 #defaults to global alignment
   protein = read_file(sys.argv[1])
   p_keys = list(protein.keys())
