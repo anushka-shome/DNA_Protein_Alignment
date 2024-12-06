@@ -189,7 +189,7 @@ def main():
   if len(sys.argv) != 4 and len(sys.argv) != 6:
     print("Usage: python alignment.py <protein_sequences>.fasta <dna_sequences>.fasta <l/g> [gap_open_penalty] [gap_extend_penalty]")
     return
-  elif len(sys.argv) == 5:
+  elif len(sys.argv) == 6:
     go = int(sys.argv[3])
     gp = int(sys.argv[4])
   if sys.argv == "l":
