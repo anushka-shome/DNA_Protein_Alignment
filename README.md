@@ -12,7 +12,9 @@ To install Biopython, run the following command in your terminal:
 pip install biopython
 ```
 
-To run the code, download the alignment.py file to your device. In your terminal, navigate to the folder containing the alignment.py file and run the following command:
+Download the alignment.py file and the BLOSUM62 file to your device. Make sure both files are in the same folder.
+
+To run the code, navigate to the folder containing the alignment.py file in your terminal and run the following command:
 ```
  python alignment.py <protein_sequences>.fasta <dna_sequences>.fasta <l/g> [gap_open_penalty] [gap_extend_penalty]
 ```
